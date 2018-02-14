@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="no"
+        android:id="@+id/itemMisViajes"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:title="se"
+        android:id="@+id/itemChat"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:title="que"
+        android:id="@+id/itemObjetivos"
+        app:showAsAction="ifRoom"
+
+        />
+
+    <item
+        android:title="va"
+        android:id="@+id/itemGrupos"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:title="aca"
+        android:id="@+id/itemVeremos"
+        app:showAsAction="ifRoom"
+        />
+
+
+
+
+</menu>
