@@ -15,6 +15,10 @@ public class Viaje {
     private String origen;
     private String hora;
 
+    public Viaje(String origen) {
+        this.origen = origen;
+    }
+
     //GETTERS
     public Conductor getConductor() {return conductor;}
     public List<Pasajero> getListaPasajeros() {return listaPasajeros;}

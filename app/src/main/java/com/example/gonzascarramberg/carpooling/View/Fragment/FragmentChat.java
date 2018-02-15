@@ -16,7 +16,7 @@ import com.example.gonzascarramberg.carpooling.R;
 public class FragmentChat extends Fragment {
 
 
-    
+
 
     public FragmentChat() {
         // Required empty public constructor

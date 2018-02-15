@@ -5,6 +5,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 
@@ -52,9 +53,11 @@ public class MainActivity extends AppCompatActivity {
         AHBottomNavigationItem itemChat= new AHBottomNavigationItem("Chat",R.drawable.ic_chat_black_24dp);
         AHBottomNavigationItem itemObjetivos= new AHBottomNavigationItem("Objetivos",R.drawable.ic_star_black_24dp);
         AHBottomNavigationItem itemMisGrupos= new AHBottomNavigationItem("Mis Grupos",R.drawable.ic_people_black_24dp);
+        AHBottomNavigationItem itemAgregarViaje= new AHBottomNavigationItem("Agregar Viaje",R.drawable.ic_add_circle_black_24dp);
 
         bottomNavigationViewEx.addItem(itemMisViajes);
         bottomNavigationViewEx.addItem(itemChat);
+        bottomNavigationViewEx.addItem(itemAgregarViaje);
         bottomNavigationViewEx.addItem(itemObjetivos);
         bottomNavigationViewEx.addItem(itemMisGrupos);
 
@@ -79,10 +82,15 @@ public class MainActivity extends AppCompatActivity {
                 } else if(position == 1) {
                     FragmentChat fragmentChat = new FragmentChat();
                     fragmentTransaction.replace(R.id.contenedorFragmentPrincipal, fragmentChat);
-                } else if (position == 2) {
+                } else if (position== 2){
+
+                    Toast.makeText(MainActivity.this, "en proceso", Toast.LENGTH_SHORT).show();
+
+
+                } else if (position == 3) {
                     FragmentObjetivos fragmentObjetivos= new FragmentObjetivos();
                     fragmentTransaction.replace(R.id.contenedorFragmentPrincipal,fragmentObjetivos);
-                } else if (position == 3) {
+                } else if (position == 4) {
                     FragmentGrupos fragmentGrupos= new FragmentGrupos();
                     fragmentTransaction.replace(R.id.contenedorFragmentPrincipal,fragmentGrupos);
                 }
