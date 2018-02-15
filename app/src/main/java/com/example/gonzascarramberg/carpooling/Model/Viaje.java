@@ -15,8 +15,13 @@ public class Viaje {
     private String origen;
     private String hora;
 
-    public Viaje(String origen) {
+    public Viaje(Conductor conductor, List<Pasajero> listaPasajeros, Double tramo, Universidad destino, String origen, String hora) {
+        this.conductor = conductor;
+        this.listaPasajeros = listaPasajeros;
+        this.tramo = tramo;
+        this.destino = destino;
         this.origen = origen;
+        this.hora = hora;
     }
 
     //GETTERS

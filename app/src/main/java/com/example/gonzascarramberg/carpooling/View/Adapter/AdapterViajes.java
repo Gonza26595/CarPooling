@@ -52,15 +52,24 @@ public class AdapterViajes extends RecyclerView.Adapter {
 
     public class Holder extends RecyclerView.ViewHolder {
 
-        private TextView viajes;
+        private TextView origen;
+        private TextView destino;
+        private TextView horario;
 
         public Holder(View itemView) {
             super(itemView);
-            viajes = (TextView) itemView.findViewById(R.id.textViewViajes);
+            origen = (TextView) itemView.findViewById(R.id.textView_origen);
+            destino = (TextView) itemView.findViewById(R.id.textViewDestino);
+            horario = (TextView) itemView.findViewById(R.id.textView_Horario);
+
         }
 
         public void cargarDatos(Viaje viaje) {
-            viajes.setText(viaje.getOrigen().toString());
+
+
+            origen.setText(viaje.getOrigen().toString());
+            destino.setText(viaje.getDestino().getNombre());
+            horario.setText(viaje.getHora());
         }
 
 
